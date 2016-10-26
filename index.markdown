@@ -1,6 +1,6 @@
 ---
-layout: default
 date: 2016-10-02 20:23:00 Z
+layout: default
 ---
 
 <div class="visible-sm action-btn">
