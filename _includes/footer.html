@@ -1,0 +1,143 @@
+<footer id="footer" class="site-footer clearfix">
+	<div class="container">
+        <div class="row">
+          <h1 class="title">Contact Us</h1> 
+            <div class="sm-12 md-6">
+                <h3 itemprop="name">Quick Hand Car Wash & Detailing</h3>
+                <p><a href="https://goo.gl/maps/J29XYSRK5KB2" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">2553 Barton St E</span><span itemprop="addressLocality">Hamilton</span>, ON <span itemprop="postalCode">L8E 2X2</span></a></p><br>
+                <p><a href="tel:289-339-0360"><i class="fa fa-phone"></i> <span itemprop="telephone">(289) 339-0360</span></a></p>
+                <p><a href="tel:289-775-0675"><i class="fa fa-phone"></i> <span itemprop="telephone">(289) 775-0675</span></a></p>
+                <p><a href="mailto:info@quickcarwash.ca"><i class="fa fa-envelope"></i> <span itemprop="email">Email Us</span></a></p>
+            </div>
+            <div class="sm-12 md-6">
+                <h3>Hours</h3>
+                <meta itemprop="openingHours" content="Mo,Tu,We,Th,Fr, 7:00-19:00, Sa,Su 8:00-17:00">
+                <p><b>Monday to Friday</b><br> <time datetime="7:00">7:00 am</time> - <time datetime="19:00">7:00 pm</time></p>
+                <p><b>Saturday to Sunday</b><br> <time datetime="8:00">8:00 am</time> - <time datetime="17:00">5:00 pm</time></p>
+             
+            </div>
+            <div class="sm-12">
+              <div id="map"></div>
+              <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC2M5r3oBN1IhbgfP54rsf5D_C9FrkdLE0'></script>
+               
+              <script type='text/javascript'>function init_map(){var myOptions = {zoom:15, scrollwheel: false, center:new google.maps.LatLng(43.236055,-79.754922),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('map'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.236055,-79.754922)});infowindow = new google.maps.InfoWindow({content:'<strong>Quick Hand Car Wash & Detailing</strong><br>2553 Barton St E<br>L8E 2X2 Hamilton<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>              
+            </div>
+                       
+        </div>
+		<div class="row">
+			<div class="sm-12">
+				<ul class="social-links">
+					<li><a target="_blank" href="https://www.facebook.com/Quick-Hand-Car-Wash-Detailing-1756553531256654/"><i class="fa fa-facebook"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/quickhandcarwash/"><i class="fa fa-instagram"></i></a></li>          
+				</ul>
+			</div>
+			<div class="sm-12 center" style="border-top: 1px solid rgba(255,255,255,0.05);">
+				<div class="copyright">
+				    &copy; Quick Hand Car Wash & Detailing &bull; All rights reserved
+				</div>				
+                <div><a href="https://affansajid.com" target="_blank">Designed by Affan Sajid</a></div>
+			</div>
+		</div>
+	</div>
+</footer>
+</span>
+
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+<!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-41763009-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>   
+
+
+<script type="text/javascript">
+/* Nav Button Toggle */
+
+$(document).ready(function () {
+
+    $('#nav-toggle').click(function () {        
+        $(this).toggleClass('is-open');
+        $(this).toggleClass('is-closed');
+        $('.nav-header').toggleClass('showNav');
+        $('body').toggleClass('frozen');
+    });
+
+
+    $(window).scroll(function(){
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 400) {
+            $('#header').addClass('white-bg');
+        }
+        else {
+            $('#header').removeClass('white-bg');
+        }
+    });
+
+});	
+</script>
+
+
+<script type="text/javascript" src="/assets/js/backstretch.js"></script>
+<script type="text/javascript">
+
+var imgArray = [{% for x in (1..5) %}"/assets/images/{{x}}.jpg"{% unless forloop.last %},{% endunless %}{% endfor %}]
+
+  
+var o = imgArray[0], u = new Image;
+u.onerror=function(){
+        console.log("error with loading image");
+};
+u.onload=function(){
+ // Start the slideshow passing only the first image
+ $('.slider').backstretch(
+                 [imgArray[0]], 
+                 { duration: 7000, fade: 750}
+                 );
+ // now we can push more images right before they should appear
+  var slider = $('.slider').data('backstretch');
+  var imgCount = 0;
+  var timer = setInterval(function(){
+    ++imgCount;
+    if(imgCount === (imgArray.length-1)) clearInterval(timer);
+    slider.images.push(imgArray[imgCount]);
+  },3500);
+};
+u.src=o;    
+
+var restart = setInterval(function(){
+  $('.slider').backstretch('next');
+  clearInterval(restart);
+}, 4000);
+</script>   
+
+
+<script type='text/javascript'>
+    /* smooth scrolling sections */
+    $('a[href*=\\#]:not([href=\\#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {        
+                $('html,body').animate({
+                    scrollTop: target.offset().top  - 100
+                }, 1000);  
+            
+            return false;
+          }
+        }
+    });    
+</script>   
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
