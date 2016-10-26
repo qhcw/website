@@ -192,7 +192,8 @@ $on-laptop:        800px;
     top: 7px;
     right: 0;
     outline: none;
-    border: none
+    border: none;
+    display: none !important;
 }
 
 #nav-toggle.is-open {
@@ -417,6 +418,13 @@ section .container {
     width: 100%;
     min-height: 480px;
     height: 100%;
+}
+
+@media (max-width: 767px) {
+    .welcome .slider, .welcome {
+        min-height: 240px;
+        height: 240px;
+    }
 }
 
 .about-section {
