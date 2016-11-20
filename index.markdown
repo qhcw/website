@@ -33,17 +33,17 @@ layout: default
 <section id="services" class="services-section">
 	<div class="container">
 		<div class="row">
-			<h1 class="title">Our Services</h1>			
-			<div class="sm-12 md-6"><span class="service-item">Tire Shine</span></div>
-			<div class="sm-12 md-6"><span class="service-item">Rim Cleaning</span></div>
-			<div class="sm-12 md-6"><span class="service-item">Engine Wash</span></div>
-			<div class="sm-12 md-6"><span class="service-item">Exterior Wash</span></div>
+			<h1 class="title">Our Services</h1>	
 			<div class="sm-12 md-6"><span class="service-item">Interior Wash</span></div>
+			<div class="sm-12 md-6"><span class="service-item">Exterior Wash</span></div>
 			<div class="sm-12 md-6"><span class="service-item">Shampoo</span></div>
-			<div class="sm-12 md-6"><span class="service-item">Wax</span></div>
-			<div class="sm-12 md-6"><span class="service-item">Air Refershner</span></div>
+			<div class="sm-12 md-6"><span class="service-item">Engine Wash</span></div>
+			<div class="sm-12 md-6"><span class="service-item">Tire Shine</span></div>
+			<div class="sm-12 md-6"><span class="service-item">Rim Cleaning</span></div>			
 			<div class="sm-12 md-6"><span class="service-item">Hand Buffing</span></div>
 			<div class="sm-12 md-6"><span class="service-item">Machine Buffing</span></div>
+			<div class="sm-12 md-6"><span class="service-item">Wax</span></div>
+			<div class="sm-12 md-6"><span class="service-item">Air Freshener</span></div>			
 		</div>
 	</div>
 </section>

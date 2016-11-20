@@ -578,3 +578,28 @@ a.blue-grey {
     width: 100%;
     height: 360px;
 }
+
+
+/* Form */
+
+#mce-EMAIL {
+    width: 400px;
+    text-align: center;
+}
+
+#mc-embedded-subscribe {
+    width: 400px !important;
+    background: #ff8c00;
+    border-color: #ff8c00 !important;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    #mce-EMAIL {
+        width: 260px;
+    }
+
+    #mc-embedded-subscribe {
+        width: 260px !important;
+    }    
+}
